@@ -1,0 +1,475 @@
+@charset "UTF-8";
+header {
+  margin-top: 20px;
+}
+
+header span {
+  border-bottom: #ff6600 solid 2px;
+}
+
+header p {
+  padding-top: 50px;
+  margin-bottom: -25px;
+}
+
+.cadre_animation {
+  height: 600px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  margin: auto;
+}
+
+/*############################   ICI LES DIFFERENTES PARTIES DU POUSSIN  ############################*/
+.pbody {
+  z-index: 1;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+}
+
+.pfeet {
+  z-index: 0;
+  top: 350px;
+  bottom: 0;
+  left: 0;
+  right: 171px;
+  max-height: 250px;
+}
+
+.pleftwing {
+  z-index: 0;
+  top: 298px;
+  bottom: 0;
+  left: 0;
+  right: 240px;
+  max-height: 100px;
+}
+
+.prightwing {
+  z-index: 0;
+  top: 300px;
+  bottom: 0;
+  left: 220px;
+  right: 0px;
+  max-height: 100px;
+}
+
+.eyeleft {
+  z-index: 2;
+  top: 130px;
+  /*yeux haut 100*/
+  bottom: 0;
+  left: 0;
+  right: 65px;
+  /*yeux haut 65*/
+  max-height: 30px;
+}
+
+.eyeright {
+  z-index: 2;
+  top: 130px;
+  bottom: 0;
+  left: 34px;
+  right: 0;
+  max-height: 30px;
+}
+
+/* INTEGRATION D'OBJETS + TAILLE ********************************************************/
+/* BALLES*/
+.balle1 {
+  z-index: 3;
+  top: 340px;
+  bottom: 0;
+  left: 0px;
+  right: 300px;
+  max-height: 60px;
+}
+
+.balle2 {
+  z-index: 2;
+  top: 340px;
+  bottom: 0;
+  left: 0px;
+  right: 300px;
+  max-height: 60px;
+}
+
+.balle3 {
+  z-index: 2;
+  top: 340px;
+  bottom: 0;
+  left: 0px;
+  right: 300px;
+  max-height: 60px;
+}
+
+.balle4 {
+  z-index: 2;
+  top: 340px;
+  bottom: 0;
+  left: 0px;
+  right: 300px;
+  max-height: 60px;
+}
+
+.balle5 {
+  z-index: 2;
+  top: 340px;
+  bottom: 0;
+  left: 0px;
+  right: 300px;
+  max-height: 60px;
+}
+
+/*ANIMATION POUSSIN******************************************************************/
+/*CORPS qui respire*/
+.pbody {
+  -webkit-animation-name: corps;
+          animation-name: corps;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes corps {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes corps {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*MOUVEMENT DES AILES*/
+.pleftwing {
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-animation-name: leftwing;
+          animation-name: leftwing;
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.prightwing {
+  -webkit-transform-origin: 100% 10%;
+          transform-origin: 100% 10%;
+  -webkit-animation-name: rightwing;
+          animation-name: rightwing;
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes leftwing {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes leftwing {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes rightwing {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotatex(-45deg);
+            transform: rotatex(-45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes rightwing {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotatex(-45deg);
+            transform: rotatex(-45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+/*MOUVEMENT DES YEUX*/
+.eyeright {
+  -webkit-animation-name: eyemove;
+          animation-name: eyemove;
+  -webkit-animation-duration: 1800ms;
+          animation-duration: 1800ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.eyeleft {
+  -webkit-animation-name: eyemove;
+          animation-name: eyemove;
+  -webkit-animation-duration: 1800ms;
+          animation-duration: 1800ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes eyemove {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  100% {
+    -webkit-transform: translatey(-17px);
+            transform: translatey(-17px);
+  }
+}
+
+@keyframes eyemove {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  100% {
+    -webkit-transform: translatey(-17px);
+            transform: translatey(-17px);
+  }
+}
+
+/* ANIMATION OBJETS**************************************************************************/
+.balle1 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-animation-name: balle;
+          animation-name: balle;
+  -webkit-animation-duration: 1400ms;
+          animation-duration: 1400ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.balle2 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-animation-name: balle;
+          animation-name: balle;
+  -webkit-animation-duration: 1400ms;
+          animation-duration: 1400ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 350ms;
+          animation-delay: 350ms;
+}
+
+.balle3 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-animation-name: balle;
+          animation-name: balle;
+  -webkit-animation-duration: 1400ms;
+          animation-duration: 1400ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.balle4 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-animation-name: balle;
+          animation-name: balle;
+  -webkit-animation-duration: 1400ms;
+          animation-duration: 1400ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1050ms;
+          animation-delay: 1050ms;
+}
+
+@-webkit-keyframes balle {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  15% {
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
+    /*self*/
+  }
+  17% {
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
+  }
+  25% {
+    -webkit-transform: translate(260px, -180px);
+            transform: translate(260px, -180px);
+  }
+  45% {
+    -webkit-transform: translate(180px, -380px);
+            transform: translate(180px, -380px);
+  }
+  50% {
+    -webkit-transform: translate(150px, -400px);
+            transform: translate(150px, -400px);
+    /*apogée*/
+  }
+  55% {
+    -webkit-transform: translate(120px, -380px);
+            transform: translate(120px, -380px);
+  }
+  75% {
+    -webkit-transform: translate(40px, -180px);
+            transform: translate(40px, -180px);
+  }
+  90% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes balle {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  15% {
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
+    /*self*/
+  }
+  17% {
+    -webkit-transform: translatex(300px);
+            transform: translatex(300px);
+  }
+  25% {
+    -webkit-transform: translate(260px, -180px);
+            transform: translate(260px, -180px);
+  }
+  45% {
+    -webkit-transform: translate(180px, -380px);
+            transform: translate(180px, -380px);
+  }
+  50% {
+    -webkit-transform: translate(150px, -400px);
+            transform: translate(150px, -400px);
+    /*apogée*/
+  }
+  55% {
+    -webkit-transform: translate(120px, -380px);
+            transform: translate(120px, -380px);
+  }
+  75% {
+    -webkit-transform: translate(40px, -180px);
+            transform: translate(40px, -180px);
+  }
+  90% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+/* ANIMATION MASSUES****************************************************************************/
+/* ANIMATION calva****************************************************************************/
+/* ANIMATION vache****************************************************************************/
+.massue {
+  display: none;
+}
+
+.vache {
+  display: none;
+}
+
+.calva {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

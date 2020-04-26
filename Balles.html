@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styleballe.css" />
+        <title>Mika malabarista</title>
+    </head>
+
+    <body class="container">
+        <header class="row">
+            <div class="col-12">
+                <article class="jumbotron">
+                    <h1 class="text-center"><span>Mika Malabarista</span></h1>
+                    <p class="text-center">Mika est un poussin fraîchement sorti de sa coquille. Je t'invite à intéragir avec lui pour savoir ce qu'il sait déjà faire !</p>
+                </article>
+            </div>
+        </header>
+
+        <section class="row">
+
+            <div class="col-12 dropdown text-center"> <!--boutton de selections d'objets-->
+                <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">
+                    Choisi un objet
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" arial-labelled-by="dropdownmenu">
+                    <li class="text-center"><a class="dropdown-item" href="index.html">Aucun</a></li>
+                    <li class="text-center"><a class="#" href="#">Balles</a></li>
+                    <li class="text-center"><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Massues (coming soon)</a></li>
+                    <li class="text-center"><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Calva (coming soon)</a></li> 
+                    <li class="text-center"><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Vaches (coming soon)</a></li>
+                </ul>
+            </div>        
+
+
+            <div class="col-12 text-center cadre_animation">
+                <figure class="group_image">
+                    
+                        
+                    <!-- POUSSIN -->
+                    <img src="image/body.png" alt="body poussin" class="pbody">
+                    <img src="image/feet.png" alt="feet poussin" class="pfeet">
+                    <img src="image/left_wing.png" alt="left wing poussin" class="pleftwing">
+                    <img src="image/right_wing.png" alt="right wing poussin" class="prightwing">
+                    <img src="image/eye.png" alt="eye left poussin" class="eyeleft">
+                    <img src="image/eye.png" alt="eye right poussin" class="eyeright">
+
+                   
+                    <!-- OBJET -->
+                    <!-- balles -->
+                    <img src="image/balle.png" alt="balle" class="balle1">
+                    <img src="image/balle.png" alt="balle" class="balle2">
+                    <img src="image/balle.png" alt="balle" class="balle3">
+                    <img src="image/balle.png" alt="balle" class="balle4">
+
+
+                    <img src="image/massue.png" alt="massue" class="massue">
+                    <img src="image/calva.png" alt="calva" class="calva">
+                    <img src="image/vache.png" alt="vache" class="vache">
+
+                </figure>
+
+            </div>
+
+        </section>
+
+        <footer class="row">
+            <div class="col-12">
+                <p class="text-center">Ce site d'animation CSS est dédié à mon Hermano !</p>
+                <p class="text-center small">&copy OpenSource - Réalisé en Sass + Bootstrap 4</p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>

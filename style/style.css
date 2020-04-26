@@ -1,0 +1,192 @@
+header {
+  margin-top: 20px;
+}
+
+header span {
+  border-bottom: #ff6600 solid 2px;
+}
+
+header p {
+  padding-top: 50px;
+  margin-bottom: -25px;
+}
+
+.cadre_animation {
+  height: 600px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  margin: auto;
+}
+
+/*############################   ICI LES DIFFERENTES PARTIES DU POUSSIN  ############################*/
+.pbody {
+  z-index: 1;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+}
+
+.pfeet {
+  z-index: 0;
+  top: 350px;
+  bottom: 0;
+  left: 0;
+  right: 171px;
+  max-height: 250px;
+}
+
+.pleftwing {
+  z-index: 0;
+  top: 298px;
+  bottom: 0;
+  left: 0;
+  right: 240px;
+  max-height: 100px;
+}
+
+.prightwing {
+  z-index: 0;
+  top: 300px;
+  bottom: 0;
+  left: 220px;
+  right: 0px;
+  max-height: 100px;
+}
+
+.eyeleft {
+  z-index: 2;
+  top: 130px;
+  /*yeux haut 100*/
+  bottom: 0;
+  left: 0;
+  right: 65px;
+  /*yeux haut 65*/
+  max-height: 30px;
+}
+
+.eyeright {
+  z-index: 2;
+  top: 130px;
+  bottom: 0;
+  left: 34px;
+  right: 0;
+  max-height: 30px;
+}
+
+/*ANIMATION POUSSIN******************************************************************/
+/*CORPS qui respire*/
+.pbody {
+  -webkit-animation-name: corps;
+          animation-name: corps;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes corps {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes corps {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*MOUVEMENT DES AILES*/
+/*MOUVEMENT DES YEUX*/
+.eyeright {
+  -webkit-animation-name: eyemove;
+          animation-name: eyemove;
+  -webkit-animation-duration: 2200ms;
+          animation-duration: 2200ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.eyeleft {
+  -webkit-animation-name: eyemove;
+          animation-name: eyemove;
+  -webkit-animation-duration: 2200ms;
+          animation-duration: 2200ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes eyemove {
+  0% {
+    -webkit-transform: translate(2px, 8px);
+            transform: translate(2px, 8px);
+  }
+  50% {
+    -webkit-transform: translate(1px, 6px);
+            transform: translate(1px, 6px);
+  }
+  75% {
+    -webkit-transform: translate(7px, -10px);
+            transform: translate(7px, -10px);
+  }
+  100% {
+    -webkit-transform: translate(1px, -10px);
+            transform: translate(1px, -10px);
+  }
+}
+
+@keyframes eyemove {
+  0% {
+    -webkit-transform: translate(2px, 8px);
+            transform: translate(2px, 8px);
+  }
+  50% {
+    -webkit-transform: translate(1px, 6px);
+            transform: translate(1px, 6px);
+  }
+  75% {
+    -webkit-transform: translate(7px, -10px);
+            transform: translate(7px, -10px);
+  }
+  100% {
+    -webkit-transform: translate(1px, -10px);
+            transform: translate(1px, -10px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
